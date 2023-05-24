@@ -1,0 +1,399 @@
+*{
+    transition: .4s;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent,rgb(15, 101, 122)); 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(-45deg,transparent,rgb(15, 101, 122)); 
+  }
+
+
+
+/********************************* NAVBAR  *************************************/
+#navbar{
+    width: 100%;
+    background: url(../images/home2.jpeg);
+    background-attachment: fixed;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    z-index: 333;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all .5s;
+    color: black;
+    box-shadow: 1px 1px 9px rgb(11, 33, 39);
+  }
+
+#navbarNavAltMarkup{
+    margin-left: 25%;
+}
+@media only screen and (max-width: 1200px){
+    #navbarNavAltMarkup{
+        margin-left: 25%;
+    }
+}
+#logoimg{
+    height: 50px;
+    width: 100px;
+}
+#navbarNavAltMarkup a{
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 600;
+    color: rgb(9, 125, 219);
+    text-shadow: 1px 1px 4px rgba(128, 128, 128, 0.555);
+    cursor: pointer;
+}
+#drop{
+    position: relative;
+}
+#drop-c{
+    position: absolute;
+    font-display: inline-block;
+    transition: .4s;
+    overflow: hidden;
+    transform: scaleY(0);
+    z-index: 2;
+    margin-left: 20px;
+    min-width: 200px;
+}
+#drop:hover #drop-c{
+    transform: scaleY(1);
+    transition: .4s;
+}
+
+#drop-c ul li{
+    padding: 5px 10px;
+    background-color: rgba(14, 137, 219, 0.664);
+    color: wheat;
+    cursor: pointer;
+}
+
+
+#drop-c ul li:hover{
+    background-color: rgb(18, 108, 168);
+    transform: translate(-9px, -2px);
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+#angleright{
+    transform: scale(0,1);
+    transition: .5s;
+}
+#drop-c ul li:hover #angleright{
+    transform: scale(1,1);
+}
+
+#search-container{
+    margin-right: 20px;
+}
+#search-container button{
+    background: none;
+    color: rgb(14, 120, 190);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#rearch-inp{
+    position: absolute;
+    transform: scale(0,0);
+    overflow: hidden;
+    z-index: 2;
+}
+#rearch-inp input{
+    padding: 5px 20px;
+    border: 1px solid rgb(14, 106, 192);
+    background: rgb(196, 218, 238);
+    box-shadow: 2px 2px 4px rgb(14, 106, 192);
+    outline: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#search-container:hover #rearch-inp{
+    transform: scale(1,1);
+}
+/********************************* Home  *************************************/
+
+#home{
+    height: 100vh;
+    width: 100%;
+    background: url(../images/home2.jpeg);
+    background-attachment: fixed;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#home h1{
+    font-size: 5rem;
+    background:linear-gradient(-45deg,white, rgb(14, 120, 190),white,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-weight: 100;
+    word-spacing: 10px;
+    width: 100%;
+    transform: translateY(-50px);
+}
+@media only screen and (max-width: 1200px){
+    #home h1{
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 1000px){
+    #home h1{
+        font-size: 3.5rem;
+        transform: translateY(-150px);
+    }
+}
+@media only screen and (max-width: 800px){
+    #home h1{
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    #home h1{
+        font-size: 2.5rem;
+    }
+} 
+#arrow-d{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+#arrow-d button{
+    transform: rotate(-90deg);
+    font-weight: bold;
+    padding: 4px 5px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px grey;
+    border: none;
+    background: white;
+    color: rgb(14, 106, 192);
+    outline: none;
+    cursor: pointer;
+    
+}
+#arrow-d button:hover{
+    color: white;
+    background: rgb(14, 106, 192);
+}
+
+/********************************* ABOUT  *************************************/
+#small-line{
+    padding: 1px;
+    background: rgb(14, 106, 192);
+    width: 50px;
+}
+/********************************* SERVICES  *************************************/
+
+#services{
+    height: 100%;
+    width: 100%;
+}
+.col-md-3{
+    height: 100%;
+    width: 100%;
+}
+#card{
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+#card #card-header1,#card-header2,#card-header3{
+    height: 100%;
+    width: 100%;
+}
+#card-header1{
+    background: url(../images/meeting.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#card-header2{
+    background: url(../images/weeding.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#card-header3{
+    background: url(../images/uv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#card #card-content{
+    background: rgba(0, 0, 0, 0.842);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    top: -60px;
+    color: white;
+    z-index: 2;
+}
+#card #card-content .lin{
+    background-color: rgb(8, 162, 201);
+    padding: 1px;
+    width: 30px;
+    margin: 20px auto;
+    margin-top: -10px;
+}
+#card:hover #card-content{
+    background: linear-gradient( rgba(0, 0, 0, 0.418),rgba(0, 0, 0, 0.863),black);
+    top: -300px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+#card-content button{
+    padding: 5px 25px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    background: rgb(8, 162, 201);
+    cursor: pointer;
+}
+
+#card-content button:hover{
+    box-shadow: 2px 2px 8px rgb(8, 162, 201);
+    background-color: rgb(8, 162, 201);
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+/********************************* SUPPORTERS  *************************************/
+
+#supporters{
+    background:url(../images/bg2.jpg);
+    background-attachment: fixed;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.856);
+}
+#supportes-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-md-3 img{
+    height: 50%;
+    width: 50%;
+    margin-bottom: 10px;
+}
+/********************************* FOOTER  *************************************/
+
+#footer{
+    background: black;
+    color: white;
+}
+.footer-logo img{
+    height: 70px;
+    width: 140px;
+}
+#line{
+    padding: 0.1px;
+    background-color: rgba(250, 235, 215, 0.37);
+    width: 100%;
+}
+#footer a{
+    color: rgba(255, 255, 255, 0.699);
+    text-decoration: none;
+}
+#footer a:hover{
+    color: white;
+    font-weight: bold;
+}
+#pointerfinger{
+    transform: scale(0,1);
+}
+#footer a:hover #pointerfinger{
+    transform: scale(1,1);
+}
+
+
+
+
+#social a{
+    margin: 8px;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#social a i:hover{
+    transform:scale(1.5,1.5) ;
+}
+#social #ig:hover{
+color: rgb(243, 40, 101);
+}
+#social #fb:hover{
+    color: rgb(71, 40, 243);
+    }
+#last{
+    background-color: black;
+    color: antiquewhite;
+}
+#last-contents{
+    display: flex;
+}
+#last-contents img{
+    height: 60px;
+    width: 70px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.back-to-top a{
+    padding: 2px 10px;
+    background-color: rgb(15, 101, 122);
+    color: white;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 22;
+    right: 20px;
+    bottom: 40px;
+}
+.back-to-top a:hover{
+    background-color: aliceblue;
+    color: rgb(15, 101, 122);
+    box-shadow: 2px 2px 8px rgb(15, 101, 122);
+}
