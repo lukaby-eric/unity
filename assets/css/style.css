@@ -150,6 +150,13 @@
     align-items: center;
     text-align: center;
 }
+@media only screen and (max-width: 400px){
+    
+    #home{
+        background-attachment:scroll;
+    }
+      
+}
 #home h1{
     font-size: 5rem;
     background:linear-gradient(-45deg,white, rgb(14, 120, 190),white,white);
