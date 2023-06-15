@@ -152,7 +152,7 @@
 }
 @media only screen and (max-width: 400px){
     
-    #home{
+    #home,#navbar{
         background-attachment:scroll;
     }
       
