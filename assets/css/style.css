@@ -150,13 +150,6 @@
     align-items: center;
     text-align: center;
 }
-@media only screen and (max-width: 400px){
-    
-    #home,#navbar{
-        background-attachment:scroll;
-    }
-      
-}
 #home h1{
     font-size: 5rem;
     background:linear-gradient(-45deg,white, rgb(14, 120, 190),white,white);
@@ -187,6 +180,12 @@
     #home h1{
         font-size: 2.5rem;
     }
+    #home{
+        background-attachment: scroll;
+    }
+    #navbar{
+        background-attachment: fixed;
+    }
 } 
 #arrow-d{
     position: absolute;
@@ -194,9 +193,9 @@
     left: 50%;
 }
 #arrow-d button{
-    transform: rotate(-90deg);
+    transform: rotate(180deg);
     font-weight: bold;
-    padding: 4px 5px;
+    padding: 5px 10px;
     border-radius: 50%;
     box-shadow: 2px 2px 4px grey;
     border: none;
@@ -389,9 +388,12 @@ color: rgb(243, 40, 101);
 
 
 
-.back-to-top a{
-    padding: 2px 10px;
+.back-to-top button{
+    padding: 5px 10px;
     background-color: rgb(15, 101, 122);
+    border: none;
+    outline: none;
+    cursor: pointer;
     color: white;
     position: fixed;
     border-radius: 50%;
@@ -399,7 +401,7 @@ color: rgb(243, 40, 101);
     right: 20px;
     bottom: 40px;
 }
-.back-to-top a:hover{
+.back-to-top button:hover{
     background-color: aliceblue;
     color: rgb(15, 101, 122);
     box-shadow: 2px 2px 8px rgb(15, 101, 122);
